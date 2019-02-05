@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.grpInput = new System.Windows.Forms.GroupBox();
+			this.converter1 = new BitJuggling.Converter();
 			this.bitViewer1 = new BitJuggling.BitViewer();
 			this.optOct = new System.Windows.Forms.RadioButton();
 			this.optHex = new System.Windows.Forms.RadioButton();
@@ -36,7 +37,6 @@
 			this.optDec = new System.Windows.Forms.RadioButton();
 			this.txtInput = new System.Windows.Forms.TextBox();
 			this.lblInput = new System.Windows.Forms.Label();
-			this.converter1 = new BitJuggling.Converter();
 			this.grpInput.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -58,12 +58,21 @@
 			this.grpInput.TabStop = false;
 			this.grpInput.Text = "Input";
 			// 
+			// converter1
+			// 
+			this.converter1.Location = new System.Drawing.Point(7, 51);
+			this.converter1.Name = "converter1";
+			this.converter1.Size = new System.Drawing.Size(140, 71);
+			this.converter1.TabIndex = 15;
+			this.converter1.Value = 0;
+			// 
 			// bitViewer1
 			// 
 			this.bitViewer1.Location = new System.Drawing.Point(179, 47);
 			this.bitViewer1.Name = "bitViewer1";
 			this.bitViewer1.Size = new System.Drawing.Size(248, 74);
 			this.bitViewer1.TabIndex = 14;
+			this.bitViewer1.Value = 0;
 			// 
 			// optOct
 			// 
@@ -113,6 +122,9 @@
 			this.txtInput.Name = "txtInput";
 			this.txtInput.Size = new System.Drawing.Size(101, 22);
 			this.txtInput.TabIndex = 1;
+			this.txtInput.Text = "0";
+			this.txtInput.TextChanged += new System.EventHandler(this.txtInput_TextChanged);
+			this.txtInput.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput_KeyPress);
 			// 
 			// lblInput
 			// 
@@ -123,13 +135,6 @@
 			this.lblInput.Size = new System.Drawing.Size(19, 17);
 			this.lblInput.TabIndex = 0;
 			this.lblInput.Text = "-:";
-			// 
-			// converter1
-			// 
-			this.converter1.Location = new System.Drawing.Point(7, 51);
-			this.converter1.Name = "converter1";
-			this.converter1.Size = new System.Drawing.Size(140, 71);
-			this.converter1.TabIndex = 15;
 			// 
 			// BitInput
 			// 

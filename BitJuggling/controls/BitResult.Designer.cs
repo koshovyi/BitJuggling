@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.lblTitle = new System.Windows.Forms.Label();
-			this.converter1 = new BitJuggling.Converter();
+			this.bitConverter = new BitJuggling.Converter();
 			this.bitViewer1 = new BitJuggling.BitViewer();
 			this.SuspendLayout();
 			// 
@@ -43,12 +43,13 @@
 			this.lblTitle.TabIndex = 9;
 			this.lblTitle.Text = "A && B:";
 			// 
-			// converter1
+			// bitConverter
 			// 
-			this.converter1.Location = new System.Drawing.Point(451, 5);
-			this.converter1.Name = "converter1";
-			this.converter1.Size = new System.Drawing.Size(140, 71);
-			this.converter1.TabIndex = 10;
+			this.bitConverter.Location = new System.Drawing.Point(451, 5);
+			this.bitConverter.Name = "bitConverter";
+			this.bitConverter.Size = new System.Drawing.Size(140, 71);
+			this.bitConverter.TabIndex = 10;
+			this.bitConverter.Value = 7;
 			// 
 			// bitViewer1
 			// 
@@ -61,7 +62,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Controls.Add(this.converter1);
+			this.Controls.Add(this.bitConverter);
 			this.Controls.Add(this.lblTitle);
 			this.Controls.Add(this.bitViewer1);
 			this.Name = "BitResult";
@@ -75,6 +76,6 @@
 
 		private System.Windows.Forms.Label lblTitle;
 		private BitViewer bitViewer1;
-		private Converter converter1;
+		private Converter bitConverter;
 	}
 }

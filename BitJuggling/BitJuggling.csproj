@@ -52,8 +52,9 @@
     <Compile Include="controls\BitResult.Designer.cs">
       <DependentUpon>BitResult.cs</DependentUpon>
     </Compile>
-    <Compile Include="classes\BitsValueChangedEvent.cs" />
-    <Compile Include="classes\BitStateChangedEvent.cs" />
+    <Compile Include="events\BitInputChangedEvent.cs" />
+    <Compile Include="events\BitsValueChangedEvent.cs" />
+    <Compile Include="events\BitStateChangedEvent.cs" />
     <Compile Include="classes\Math.cs" />
     <Compile Include="classes\Number.cs" />
     <Compile Include="controls\BitItem.cs">

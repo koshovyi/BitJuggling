@@ -13,6 +13,8 @@ namespace BitJuggling
 	public partial class BitResult : UserControl
 	{
 
+		private int _a, _b, _n;
+
 		private BitOperations _bitOperations;
 
 		public BitOperations BitOperations
@@ -22,6 +24,37 @@ namespace BitJuggling
 			{
 				this._bitOperations = value;
 				this.SetTitle();
+				this.Calculate();
+			}
+		}
+
+		public int ValueA
+		{
+			get { return this._a; }
+			set
+			{
+				this._a = value;
+				this.Calculate();
+			}
+		}
+
+		public int ValueB
+		{
+			get { return this._b; }
+			set
+			{
+				this._b = value;
+				this.Calculate();
+			}
+		}
+
+		public int ValueN
+		{
+			get { return this._n; }
+			set
+			{
+				this._n = value;
+				this.Calculate();
 			}
 		}
 
@@ -54,6 +87,32 @@ namespace BitJuggling
 				case BitOperations.UNKNOWN:
 				default:
 					return "-";
+			}
+		}
+
+		private void Calculate()
+		{
+			int result = this.CalculateResult();
+			this.bitConverter.Value = result;
+		}
+
+		private int CalculateResult()
+		{
+			switch (this.BitOperations)
+			{
+				default:
+				case BitOperations.AND:
+					return this._a & this._b;
+				case BitOperations.OR:
+					return this._a | this._b;
+				case BitOperations.XOR:
+					return this._a ^ this._b;
+				case BitOperations.LEFTSHIFT:
+					return this._a << this._n;
+				case BitOperations.RIGHTSHIFT:
+					return this._a >> this._n;
+				case BitOperations.ONESCOMPLEMENT:
+					return ~ this._a;
 			}
 		}
 

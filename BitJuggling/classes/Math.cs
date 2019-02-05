@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Linq;
 
 namespace BitJuggling
 {
@@ -33,19 +35,36 @@ namespace BitJuggling
 
 		#region From Dec
 
-		public static string ConvertBinFromDec(int decimalValue)
+		public static string ConvertBinFromDec(int decValue)
 		{
-			return Convert.ToString(decimalValue, BASE_BIN);
+			return Convert.ToString(decValue, BASE_BIN);
 		}
 
-		public static string ConvertOctFromDec(int decimalValue)
+		public static string ConvertOctFromDec(int decValue)
 		{
-			return Convert.ToString(decimalValue, BASE_OCT);
+			return Convert.ToString(decValue, BASE_OCT);
 		}
 
-		public static string ConvertHexFromDec(int decimalValue)
+		public static string ConvertHexFromDec(int decValue)
 		{
-			return Convert.ToString(decimalValue, BASE_HEX);
+			return Convert.ToString(decValue, BASE_HEX)
+				.PadLeft(8, '0')
+				.ToUpper();
+		}
+
+		#endregion
+
+		#region Bits
+
+		public static bool[] GetBitsFromDec(int decValue)
+		{
+			string s = Convert.ToString(decValue, 2);
+			bool[] bits = s.PadLeft(8, '0')
+				.Select(c => int.Parse(c.ToString()))
+				.ToArray()
+				.Select(bit => bit == 1 ? true : false)
+				.ToArray();
+			return bits;
 		}
 
 		#endregion
