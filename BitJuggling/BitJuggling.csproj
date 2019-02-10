@@ -53,6 +53,7 @@
       <DependentUpon>BitResult.cs</DependentUpon>
     </Compile>
     <Compile Include="events\BitInputChangedEvent.cs" />
+    <Compile Include="events\DecValueChangedEvent.cs" />
     <Compile Include="events\BitsValueChangedEvent.cs" />
     <Compile Include="events\BitStateChangedEvent.cs" />
     <Compile Include="classes\Math.cs" />
@@ -69,12 +70,6 @@
     <Compile Include="controls\BitViewer.Designer.cs">
       <DependentUpon>BitViewer.cs</DependentUpon>
     </Compile>
-    <Compile Include="controls\BitInput.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="controls\BitInput.Designer.cs">
-      <DependentUpon>BitInput.cs</DependentUpon>
-    </Compile>
     <Compile Include="classes\BitOperations.cs" />
     <Compile Include="controls\Converter.cs">
       <SubType>UserControl</SubType>
@@ -88,6 +83,12 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="controls\Input.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\Input.Designer.cs">
+      <DependentUpon>Input.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="controls\BitResult.resx">
@@ -95,9 +96,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="controls\BitItem.resx">
       <DependentUpon>BitItem.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="controls\BitInput.resx">
-      <DependentUpon>BitInput.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="controls\BitViewer.resx">
       <DependentUpon>BitViewer.cs</DependentUpon>
@@ -107,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\Input.resx">
+      <DependentUpon>Input.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

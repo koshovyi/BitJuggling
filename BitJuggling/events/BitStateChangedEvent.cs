@@ -4,7 +4,7 @@
 	public class BitStateChangedEvent
 	{
 
-		public bool NewBitState { get; set; }
+		public bool NewBitState { get; private set; }
 
 		public BitStateChangedEvent(bool newBitState)
 		{

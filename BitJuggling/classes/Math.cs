@@ -67,6 +67,12 @@ namespace BitJuggling
 			return bits;
 		}
 
+		public static int GetDecFromBits(bool b1, bool b2, bool b3, bool b4, bool b5, bool b6, bool b7, bool b8)
+		{
+			string s(bool b) => b ? "1" : "0";
+			return ConvertDecFromBin(s(b1) + s(b2) + s(b3) + s(b4) + s(b5) + s(b6) + s(b7) + s(b8));
+		}
+
 		#endregion
 
 	}

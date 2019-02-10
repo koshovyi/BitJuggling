@@ -40,10 +40,12 @@
 			// 
 			// lblOct2
 			// 
-			this.lblOct2.AutoSize = true;
-			this.lblOct2.Location = new System.Drawing.Point(60, 54);
+			this.lblOct2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.lblOct2.AutoEllipsis = true;
+			this.lblOct2.Location = new System.Drawing.Point(49, 52);
 			this.lblOct2.Name = "lblOct2";
-			this.lblOct2.Size = new System.Drawing.Size(16, 17);
+			this.lblOct2.Size = new System.Drawing.Size(142, 17);
 			this.lblOct2.TabIndex = 21;
 			this.lblOct2.Text = "0";
 			// 
@@ -59,10 +61,12 @@
 			// 
 			// lblHex2
 			// 
-			this.lblHex2.AutoSize = true;
-			this.lblHex2.Location = new System.Drawing.Point(60, 37);
+			this.lblHex2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.lblHex2.AutoEllipsis = true;
+			this.lblHex2.Location = new System.Drawing.Point(49, 35);
 			this.lblHex2.Name = "lblHex2";
-			this.lblHex2.Size = new System.Drawing.Size(16, 17);
+			this.lblHex2.Size = new System.Drawing.Size(142, 17);
 			this.lblHex2.TabIndex = 19;
 			this.lblHex2.Text = "0";
 			// 
@@ -78,10 +82,12 @@
 			// 
 			// lblBin2
 			// 
-			this.lblBin2.AutoSize = true;
-			this.lblBin2.Location = new System.Drawing.Point(60, 20);
+			this.lblBin2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.lblBin2.AutoEllipsis = true;
+			this.lblBin2.Location = new System.Drawing.Point(49, 18);
 			this.lblBin2.Name = "lblBin2";
-			this.lblBin2.Size = new System.Drawing.Size(16, 17);
+			this.lblBin2.Size = new System.Drawing.Size(142, 17);
 			this.lblBin2.TabIndex = 17;
 			this.lblBin2.Text = "0";
 			// 
@@ -97,10 +103,12 @@
 			// 
 			// lblDec2
 			// 
-			this.lblDec2.AutoSize = true;
-			this.lblDec2.Location = new System.Drawing.Point(60, 3);
+			this.lblDec2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.lblDec2.AutoEllipsis = true;
+			this.lblDec2.Location = new System.Drawing.Point(49, 1);
 			this.lblDec2.Name = "lblDec2";
-			this.lblDec2.Size = new System.Drawing.Size(16, 17);
+			this.lblDec2.Size = new System.Drawing.Size(142, 17);
 			this.lblDec2.TabIndex = 15;
 			this.lblDec2.Text = "0";
 			// 
@@ -118,6 +126,8 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.Color.White;
+			this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.Controls.Add(this.lblOct2);
 			this.Controls.Add(this.lblOct1);
 			this.Controls.Add(this.lblHex2);
@@ -127,7 +137,7 @@
 			this.Controls.Add(this.lblDec2);
 			this.Controls.Add(this.lblDec1);
 			this.Name = "Converter";
-			this.Size = new System.Drawing.Size(140, 71);
+			this.Size = new System.Drawing.Size(198, 69);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

@@ -18,6 +18,12 @@ namespace BitJuggling
 			}
 		}
 
+		public bool AutoCheck
+		{
+			get { return this.chkBit.AutoCheck; }
+			set { this.chkBit.AutoCheck = value; }
+		}
+
 		public BitItem()
 		{
 			InitializeComponent();

@@ -94,6 +94,7 @@ namespace BitJuggling
 		{
 			int result = this.CalculateResult();
 			this.bitConverter.Value = result;
+			this.bitViewer1.Value = result;
 		}
 
 		private int CalculateResult()
