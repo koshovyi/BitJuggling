@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace BitJuggling
 {
@@ -18,16 +19,24 @@ namespace BitJuggling
 
 		public static int ConvertDecFromBin(string binValue)
 		{
+			if (string.IsNullOrEmpty(binValue))
+				binValue = "0";
+			if (!Regex.IsMatch(binValue, "^[01]+$"))
+				binValue = "0";
 			return Convert.ToInt32(binValue, BASE_BIN);
 		}
 
 		public static int ConvertDecFromOct(string octValue)
 		{
+			if (string.IsNullOrEmpty(octValue))
+				octValue = "0";
 			return Convert.ToInt32(octValue, BASE_OCT);
 		}
 
 		public static int ConvertDecFromHex(string hexValue)
 		{
+			if (string.IsNullOrEmpty(hexValue))
+				hexValue = "0";
 			return Convert.ToInt32(hexValue, BASE_HEX);
 		}
 
@@ -37,7 +46,8 @@ namespace BitJuggling
 
 		public static string ConvertBinFromDec(int decValue)
 		{
-			return Convert.ToString(decValue, BASE_BIN);
+			return Convert.ToString(decValue, BASE_BIN)
+				.PadLeft(8, '0');
 		}
 
 		public static string ConvertOctFromDec(int decValue)
@@ -48,7 +58,6 @@ namespace BitJuggling
 		public static string ConvertHexFromDec(int decValue)
 		{
 			return Convert.ToString(decValue, BASE_HEX)
-				.PadLeft(8, '0')
 				.ToUpper();
 		}
 
