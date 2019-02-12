@@ -1,2 +1,2 @@
-# BItJuggling
-Bit converter and calculator for Windows
+# Bit Juggling
+Bitwise operations, converter and calculator for Windows.
