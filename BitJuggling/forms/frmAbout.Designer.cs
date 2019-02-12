@@ -29,12 +29,12 @@
 		private void InitializeComponent()
 		{
 			this.grpAbout = new System.Windows.Forms.GroupBox();
-			this.lblName = new System.Windows.Forms.Label();
-			this.lblAuthor = new System.Windows.Forms.Label();
-			this.lnkLink = new System.Windows.Forms.LinkLabel();
-			this.lblDescription = new System.Windows.Forms.Label();
-			this.lblCopyright = new System.Windows.Forms.Label();
 			this.lnkGitHub = new System.Windows.Forms.LinkLabel();
+			this.lblCopyright = new System.Windows.Forms.Label();
+			this.lblDescription = new System.Windows.Forms.Label();
+			this.lnkLink = new System.Windows.Forms.LinkLabel();
+			this.lblAuthor = new System.Windows.Forms.Label();
+			this.lblName = new System.Windows.Forms.Label();
 			this.grpAbout.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -55,23 +55,34 @@
 			this.grpAbout.TabIndex = 0;
 			this.grpAbout.TabStop = false;
 			// 
-			// lblName
+			// lnkGitHub
 			// 
-			this.lblName.AutoSize = true;
-			this.lblName.Location = new System.Drawing.Point(6, 18);
-			this.lblName.Name = "lblName";
-			this.lblName.Size = new System.Drawing.Size(35, 17);
-			this.lblName.TabIndex = 1;
-			this.lblName.Text = "Title";
+			this.lnkGitHub.AutoSize = true;
+			this.lnkGitHub.Location = new System.Drawing.Point(6, 86);
+			this.lnkGitHub.Name = "lnkGitHub";
+			this.lnkGitHub.Size = new System.Drawing.Size(99, 17);
+			this.lnkGitHub.TabIndex = 6;
+			this.lnkGitHub.TabStop = true;
+			this.lnkGitHub.Text = "GitHub project";
+			this.lnkGitHub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkGitHub_LinkClicked);
 			// 
-			// lblAuthor
+			// lblCopyright
 			// 
-			this.lblAuthor.AutoSize = true;
-			this.lblAuthor.Location = new System.Drawing.Point(6, 52);
-			this.lblAuthor.Name = "lblAuthor";
-			this.lblAuthor.Size = new System.Drawing.Size(50, 17);
-			this.lblAuthor.TabIndex = 2;
-			this.lblAuthor.Text = "Author";
+			this.lblCopyright.AutoSize = true;
+			this.lblCopyright.Location = new System.Drawing.Point(6, 103);
+			this.lblCopyright.Name = "lblCopyright";
+			this.lblCopyright.Size = new System.Drawing.Size(68, 17);
+			this.lblCopyright.TabIndex = 5;
+			this.lblCopyright.Text = "Copyright";
+			// 
+			// lblDescription
+			// 
+			this.lblDescription.AutoSize = true;
+			this.lblDescription.Location = new System.Drawing.Point(6, 35);
+			this.lblDescription.Name = "lblDescription";
+			this.lblDescription.Size = new System.Drawing.Size(79, 17);
+			this.lblDescription.TabIndex = 4;
+			this.lblDescription.Text = "Description";
 			// 
 			// lnkLink
 			// 
@@ -84,34 +95,23 @@
 			this.lnkLink.Text = "https://www.koshovyi.com";
 			this.lnkLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkLink_LinkClicked);
 			// 
-			// lblDescription
+			// lblAuthor
 			// 
-			this.lblDescription.AutoSize = true;
-			this.lblDescription.Location = new System.Drawing.Point(6, 35);
-			this.lblDescription.Name = "lblDescription";
-			this.lblDescription.Size = new System.Drawing.Size(79, 17);
-			this.lblDescription.TabIndex = 4;
-			this.lblDescription.Text = "Description";
+			this.lblAuthor.AutoSize = true;
+			this.lblAuthor.Location = new System.Drawing.Point(6, 52);
+			this.lblAuthor.Name = "lblAuthor";
+			this.lblAuthor.Size = new System.Drawing.Size(50, 17);
+			this.lblAuthor.TabIndex = 2;
+			this.lblAuthor.Text = "Author";
 			// 
-			// lblCopyright
+			// lblName
 			// 
-			this.lblCopyright.AutoSize = true;
-			this.lblCopyright.Location = new System.Drawing.Point(6, 103);
-			this.lblCopyright.Name = "lblCopyright";
-			this.lblCopyright.Size = new System.Drawing.Size(68, 17);
-			this.lblCopyright.TabIndex = 5;
-			this.lblCopyright.Text = "Copyright";
-			// 
-			// lnkGitHub
-			// 
-			this.lnkGitHub.AutoSize = true;
-			this.lnkGitHub.Location = new System.Drawing.Point(6, 86);
-			this.lnkGitHub.Name = "lnkGitHub";
-			this.lnkGitHub.Size = new System.Drawing.Size(99, 17);
-			this.lnkGitHub.TabIndex = 6;
-			this.lnkGitHub.TabStop = true;
-			this.lnkGitHub.Text = "GitHub project";
-			this.lnkGitHub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkGitHub_LinkClicked);
+			this.lblName.AutoSize = true;
+			this.lblName.Location = new System.Drawing.Point(6, 18);
+			this.lblName.Name = "lblName";
+			this.lblName.Size = new System.Drawing.Size(35, 17);
+			this.lblName.TabIndex = 1;
+			this.lblName.Text = "Title";
 			// 
 			// frmAbout
 			// 
@@ -122,6 +122,7 @@
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
 			this.MaximizeBox = false;
 			this.Name = "frmAbout";
+			this.ShowInTaskbar = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "About BitJuggling";
 			this.Load += new System.EventHandler(this.frmAbout_Load);

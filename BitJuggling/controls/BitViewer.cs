@@ -6,11 +6,11 @@ namespace BitJuggling
 	public partial class BitViewer : UserControl
 	{
 
-		private int _value = 0;
+		private byte _value = 0;
 
 		public event EventHandler<BitsValueChangedEvent> BitsValueChanged;
 
-		public int Value
+		public byte Value
 		{
 			get { return this._value; }
 			set

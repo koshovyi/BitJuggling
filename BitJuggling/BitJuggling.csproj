@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="controls\Calculator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\Calculator.Designer.cs">
+      <DependentUpon>Calculator.cs</DependentUpon>
+    </Compile>
     <Compile Include="controls\BitResult.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -83,6 +89,12 @@
     <Compile Include="forms\frmAbout.Designer.cs">
       <DependentUpon>frmAbout.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\frmInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmInput.Designer.cs">
+      <DependentUpon>frmInput.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +109,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="controls\Calculator.resx">
+      <DependentUpon>Calculator.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="controls\BitResult.resx">
       <DependentUpon>BitResult.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\frmAbout.resx">
       <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmInput.resx">
+      <DependentUpon>frmInput.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>

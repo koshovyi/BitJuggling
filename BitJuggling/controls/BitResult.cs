@@ -1,19 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace BitJuggling
 {
 	public partial class BitResult : UserControl
 	{
 
-		private int _a, _b, _n;
+		private byte _a, _b;
+
+		private short _n;
 
 		private BitOperations _bitOperations;
 
@@ -28,7 +22,7 @@ namespace BitJuggling
 			}
 		}
 
-		public int ValueA
+		public byte ValueA
 		{
 			get { return this._a; }
 			set
@@ -38,7 +32,7 @@ namespace BitJuggling
 			}
 		}
 
-		public int ValueB
+		public byte ValueB
 		{
 			get { return this._b; }
 			set
@@ -48,7 +42,7 @@ namespace BitJuggling
 			}
 		}
 
-		public int ValueN
+		public short ValueN
 		{
 			get { return this._n; }
 			set
@@ -93,8 +87,8 @@ namespace BitJuggling
 		private void Calculate()
 		{
 			int result = this.CalculateResult();
-			this.bitConverter.Value = result;
-			this.bitViewer1.Value = result;
+			this.bitConverter.Value = (byte)result;
+			this.bitViewer1.Value = (byte)result;
 		}
 
 		private int CalculateResult()

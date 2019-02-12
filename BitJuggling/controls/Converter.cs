@@ -1,21 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace BitJuggling
 {
 	public partial class Converter : UserControl
 	{
 
-		private int _value = 0;
+		private byte _value = 0;
 
-		public int Value
+		public byte Value
 		{
 			get { return this._value; }
 			set

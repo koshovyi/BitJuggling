@@ -6,7 +6,7 @@ namespace BitJuggling
 	public partial class Input : UserControl
 	{
 
-		private int _value;
+		private byte _value;
 
 		public event EventHandler<DecValueChangedEvent> DecValueChanged;
 
@@ -16,7 +16,7 @@ namespace BitJuggling
 			set { this.lblTitle.Text = value; }
 		}
 
-		public int Value
+		public byte Value
 		{
 			get { return this._value; }
 			set
@@ -40,7 +40,7 @@ namespace BitJuggling
 
 		private void bitViewer1_BitsValueChanged(object sender, BitsValueChangedEvent e)
 		{
-			this.Value = e.DecimalValue;
+			this.Value = (byte)e.DecimalValue;
 		}
 
 	}

@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitJuggling", "BitJuggling\BitJuggling.csproj", "{BEC95420-5514-46B1-BF10-AE40A36A7603}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitJuggling.Cmd", "BitJuggling.Cmd\BitJuggling.Cmd.csproj", "{6CCB59FA-E8F0-4568-8EEF-B5622C92F40F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BEC95420-5514-46B1-BF10-AE40A36A7603}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEC95420-5514-46B1-BF10-AE40A36A7603}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEC95420-5514-46B1-BF10-AE40A36A7603}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CCB59FA-E8F0-4568-8EEF-B5622C92F40F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CCB59FA-E8F0-4568-8EEF-B5622C92F40F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CCB59FA-E8F0-4568-8EEF-B5622C92F40F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CCB59FA-E8F0-4568-8EEF-B5622C92F40F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

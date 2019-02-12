@@ -6,19 +6,19 @@ namespace BitJuggling
 	public partial class frmInput : Form
 	{
 
-		public int ValueA
+		public byte ValueA
 		{
 			get { return this.calculator1.Value; }
 			set { this.calculator1.Value = value; }
 		}
 
-		public int ValueB
+		public byte ValueB
 		{
 			get { return this.calculator2.Value; }
 			set { this.calculator2.Value = value; }
 		}
 
-		public frmInput(int inputA, int inputB)
+		public frmInput(byte inputA, byte inputB)
 		{
 			InitializeComponent();
 			this.calculator1.Value = inputA;

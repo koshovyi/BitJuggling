@@ -6,11 +6,11 @@ namespace BitJuggling
 	public partial class Calculator : UserControl
 	{
 
-		private int _value;
+		private byte _value;
 
 		private bool _update;
 
-		public int Value
+		public byte Value
 		{
 			get { return this._value; }
 			set
@@ -92,7 +92,7 @@ namespace BitJuggling
 					this.txtBin.Text = Math.ConvertBinFromDec(decValue);
 				if(hex)
 					this.txtHex.Text = Math.ConvertHexFromDec(decValue);
-				this._value = decValue;
+				this._value = (byte)decValue;
 				this._update = false;
 			}
 		}
