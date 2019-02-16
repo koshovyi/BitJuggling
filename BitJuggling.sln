@@ -9,8 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitJuggling.Cmd", "BitJuggl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "documentation", "documentation", "{7523592E-20D7-47B2-97F1-CBADAC76B56B}"
 	ProjectSection(SolutionItems) = preProject
-		C:\Users\dima\Desktop\console.png = C:\Users\dima\Desktop\console.png
-		C:\Users\dima\Desktop\desktop.png = C:\Users\dima\Desktop\desktop.png
+		documents\console.png = documents\console.png
+		documents\desktop.png = documents\desktop.png
 		README.md = README.md
 	EndProjectSection
 EndProject
