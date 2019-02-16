@@ -1,15 +1,16 @@
 ﻿using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("BitJuggling.Cmd")]
-[assembly: AssemblyDescription("Bitwise operations, converter and calculator.")]
+[assembly: AssemblyTitle("BitJuggling.Common")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Dmytro Koshovyi, Koshovyi.com.")]
-[assembly: AssemblyProduct("BitJuggling.Cmd")]
-[assembly: AssemblyCopyright("Copyright © 2019")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("BitJuggling.Common")]
+[assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -19,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("6ccb59fa-e8f0-4568-8eef-b5622c92f40f")]
+[assembly: Guid("316a1084-2699-4031-b43d-5a378f6a52d4")]
 
 // Version information for an assembly consists of the following four values:
 //

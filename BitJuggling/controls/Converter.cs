@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using BitJuggling.Common;
+using System.Windows.Forms;
 
 namespace BitJuggling
 {

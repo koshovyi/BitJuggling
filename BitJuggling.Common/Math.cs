@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Collections;
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace BitJuggling
+namespace BitJuggling.Common
 {
 
 	public class Math
@@ -52,7 +51,8 @@ namespace BitJuggling
 
 		public static string ConvertOctFromDec(int decValue)
 		{
-			return Convert.ToString(decValue, BASE_OCT);
+			return Convert.ToString(decValue, BASE_OCT)
+				.PadLeft(4, '0');
 		}
 
 		public static string ConvertHexFromDec(int decValue)

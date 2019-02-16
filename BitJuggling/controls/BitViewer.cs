@@ -43,7 +43,7 @@ namespace BitJuggling
 
 		private void SetBits()
 		{
-			bool[] bits = Math.GetBitsFromDec(this._value);
+			bool[] bits = Common.Math.GetBitsFromDec(this._value);
 			bitItem1.Checked = bits[0];
 			bitItem2.Checked = bits[1];
 			bitItem3.Checked = bits[2];

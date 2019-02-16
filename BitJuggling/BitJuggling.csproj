@@ -62,8 +62,6 @@
     <Compile Include="events\DecValueChangedEvent.cs" />
     <Compile Include="events\BitsValueChangedEvent.cs" />
     <Compile Include="events\BitStateChangedEvent.cs" />
-    <Compile Include="classes\Math.cs" />
-    <Compile Include="classes\Number.cs" />
     <Compile Include="controls\BitItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -158,6 +156,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BitJuggling.Common\BitJuggling.Common.csproj">
+      <Project>{316a1084-2699-4031-b43d-5a378f6a52d4}</Project>
+      <Name>BitJuggling.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

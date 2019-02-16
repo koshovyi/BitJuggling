@@ -1,4 +1,6 @@
-﻿namespace BitJuggling
+﻿using BitJuggling.Common;
+
+namespace BitJuggling
 {
 
 	public class BitsValueChangedEvent

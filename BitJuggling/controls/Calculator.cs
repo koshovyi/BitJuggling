@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using BitJuggling.Common;
 
 namespace BitJuggling
 {
@@ -62,17 +63,17 @@ namespace BitJuggling
 
 		private void txtBin_TextChanged(object sender, EventArgs e)
 		{
-			this.Calculate(Math.ConvertDecFromBin(txtBin.Text), bin: false);
+			this.Calculate(Common.Math.ConvertDecFromBin(txtBin.Text), bin: false);
 		}
 
 		private void txtHex_TextChanged(object sender, EventArgs e)
 		{
-			this.Calculate(Math.ConvertDecFromHex(txtHex.Text), hex: false);
+			this.Calculate(Common.Math.ConvertDecFromHex(txtHex.Text), hex: false);
 		}
 
 		private void numOct_ValueChanged(object sender, EventArgs e)
 		{
-			this.Calculate(Math.ConvertDecFromOct(numOct.Value.ToString()), oct: false);
+			this.Calculate(Common.Math.ConvertDecFromOct(numOct.Value.ToString()), oct: false);
 		}
 
 		private void Calculate(int decValue, bool dec = true, bool hex = true, bool bin = true, bool oct = true)
@@ -87,11 +88,11 @@ namespace BitJuggling
 				if(dec)
 					this.numDec.Value = decValue;
 				if(oct)
-					this.numOct.Value = Convert.ToInt32(Math.ConvertOctFromDec(decValue));
+					this.numOct.Value = Convert.ToInt32(Common.Math.ConvertOctFromDec(decValue));
 				if(bin)
-					this.txtBin.Text = Math.ConvertBinFromDec(decValue);
+					this.txtBin.Text = Common.Math.ConvertBinFromDec(decValue);
 				if(hex)
-					this.txtHex.Text = Math.ConvertHexFromDec(decValue);
+					this.txtHex.Text = Common.Math.ConvertHexFromDec(decValue);
 				this._value = (byte)decValue;
 				this._update = false;
 			}
